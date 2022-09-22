@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const NavStyle = styled.nav`
+export const NavStyle = styled.header`
   padding: 1rem ${({ theme }) => theme.spacing.margin};
   display: grid;
   width: 100%;

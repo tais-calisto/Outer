@@ -3,8 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@fontsource/hind": "^4.5.9",
-    "@fontsource/montserrat": "^4.5.12",
+    "@react-spring/parallax": "^9.5.4",
     "@tabler/icons": "^1.96.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
