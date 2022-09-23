@@ -54,6 +54,23 @@ font-size: 1.1rem;
 
 };
 
+body{
+    transition: 0.5s ease-in-out;
+
+    background-color: #EBF1F1;
+}
+
+.first{
+    background-color: #1C203E;
+}
+.second{
+    background-color: #36C09F;
+}
+.third{
+    background-color: #A4B6DD;
+}
+
+
 `
 
 export default globalStyle

@@ -20,6 +20,7 @@ export const FormStyle = styled.section`
       position: relative;
       h4 {
         position: absolute;
+        z-index: 0;
         top: 40%;
         left: 35%;
         transform: translate(-50%, -50%);

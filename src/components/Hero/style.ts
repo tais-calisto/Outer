@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const HeroStyle = styled.main`
-  background: ${({ theme }) => theme.colors.secundary100};
   display: flex;
   flex-direction: row;
   align-content: space-between;

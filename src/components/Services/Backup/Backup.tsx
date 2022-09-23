@@ -3,7 +3,8 @@ import { ServicesStyle } from '../style'
 
 const Backup = () => {
   return (
-    <ServicesStyle style={{ background: '#1C203E' }}>
+    <ServicesStyle>
+      <img src={image}></img>
       <section className='backup'>
         <h2>Backup em nuvem: Segurança avançada para seus dados</h2>
         <p>
@@ -15,7 +16,6 @@ const Backup = () => {
           <button className='btnSecundary'>Saiba mais</button>
         </div>
       </section>
-      <img src={image}></img>
     </ServicesStyle>
   )
 }

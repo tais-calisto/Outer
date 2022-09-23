@@ -3,7 +3,8 @@ import { ServicesStyle } from '../style'
 
 const More = () => {
   return (
-    <ServicesStyle style={{ background: '#A4B6DD' }}>
+    <ServicesStyle>
+      <img src={image}></img>
       <section className='more'>
         <h2>Server VPS: Tenha o seu servidor virtual</h2>
         <p>
@@ -15,7 +16,6 @@ const More = () => {
           <button className='btnSecundary'>Saiba mais</button>
         </div>
       </section>
-      <img src={image}></img>
     </ServicesStyle>
   )
 }
