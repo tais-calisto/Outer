@@ -4,9 +4,33 @@ export const ServicesStyle = styled.section`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 2rem 5rem;
-
+  padding: 5rem;
   gap: 7rem;
+
+  .IMGonscreenLeft,
+  .TXTonscreenLeft,
+  .IMGonscreenRight,
+  .TXTonscreenRight {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+
+  .IMGoffscreenLeft,
+  .TXToffscreenRight {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+
+  .IMGoffscreenRight,
+  .TXToffscreenLeft {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+
+  h2 {
+    padding-top: 2rem;
+  }
+
   h2,
   p {
     padding-bottom: 4rem;
@@ -72,6 +96,29 @@ export const ServicesStyle = styled.section`
         background: linear-gradient(96.82deg, #e6ecec 0%, #c2c7ca 55.24%);
       }
       .btnSecundary {
+        background: transparent;
+        border: 4px solid ${({ theme }) => theme.colors.secundary100};
+      }
+    }
+  }
+
+  .privacy {
+    h2 {
+      padding-top: 4rem;
+    }
+    padding-top: 5rem;
+    color: ${({ theme }) => theme.colors.secundary100};
+    .buttons {
+      .btnPrimary,
+      .btnSecundary {
+        padding: 1rem 2rem;
+      }
+      .btnPrimary {
+        background: linear-gradient(96.82deg, #a4b6dd 0%, #b9c2d0 99.12%);
+        color: ${({ theme }) => theme.colors.primary500};
+      }
+      .btnSecundary {
+        color: ${({ theme }) => theme.colors.secundary100};
         background: transparent;
         border: 4px solid ${({ theme }) => theme.colors.secundary100};
       }

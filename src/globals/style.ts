@@ -6,6 +6,8 @@ const globalStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    transition: 1.5s all ease-in-out;
+
 }
 
 
@@ -68,6 +70,9 @@ body{
 }
 .third{
     background-color: #A4B6DD;
+}
+.fourth{
+    background-color: #1C203E;
 }
 
 

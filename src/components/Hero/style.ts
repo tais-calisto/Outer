@@ -6,6 +6,7 @@ export const HeroStyle = styled.main`
   align-content: space-between;
   padding-top: 5rem;
   gap: 3rem;
+
   section {
     color: ${({ theme }) => theme.colors.primary500};
     padding-top: 8rem;

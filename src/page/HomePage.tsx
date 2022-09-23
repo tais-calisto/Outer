@@ -1,21 +1,18 @@
 import Navigation from '../components/Navigation/Navigation'
 import Hero from '../components/Hero/Hero'
-import Backup from '../components/Services/Backup/Backup'
-import Server from '../components/Services/Server/Server'
-import More from '../components/Services/More/More'
 import Form from '../components/Form/Form'
 import Partners from '../components/Partners/Partners'
 import Newsletter from '../components/Newsletter/Newsletter'
 import Footer from '../components/Footer/Footer'
+import Services from '../components/Services/Services'
 import { HomeStyle } from './style'
-import { Parallax, ParallaxLayer, IParallax } from '@react-spring/parallax'
-
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const HomePage = () => {
-  // const ref = useRef<IParallax>(null!)
+  const [offsetY, setOffsetY] = useState(0)
 
   const handleScroll = () => {
+    setOffsetY(window.scrollY)
     if (window.scrollY > window.innerHeight) {
       document.body.classList.add('first')
     } else {
@@ -31,10 +28,16 @@ const HomePage = () => {
     } else {
       document.body.classList.remove('third')
     }
+    if (window.scrollY > window.innerHeight * 4) {
+      document.body.classList.add('fourth')
+    } else {
+      document.body.classList.remove('fourth')
+    }
   }
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll)
+
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
@@ -42,9 +45,8 @@ const HomePage = () => {
     <HomeStyle>
       <Navigation />
       <Hero />
-      <Backup />
-      <Server />
-      <More />
+      <Services />
+
       <Form />
       <Partners />
       <Newsletter />
