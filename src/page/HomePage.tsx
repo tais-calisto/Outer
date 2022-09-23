@@ -6,13 +6,10 @@ import Newsletter from '../components/Newsletter/Newsletter'
 import Footer from '../components/Footer/Footer'
 import Services from '../components/Services/Services'
 import { HomeStyle } from './style'
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 
 const HomePage = () => {
-  const [offsetY, setOffsetY] = useState(0)
-
   const handleScroll = () => {
-    setOffsetY(window.scrollY)
     if (window.scrollY > window.innerHeight) {
       document.body.classList.add('first')
     } else {

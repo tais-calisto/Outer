@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const NavStyle = styled.header`
-  padding: 1rem ${({ theme }) => theme.spacing.margin};
+  padding: 0.5rem ${({ theme }) => theme.spacing.margin};
   display: grid;
   width: 100%;
   grid-template-columns: 1fr 7fr;

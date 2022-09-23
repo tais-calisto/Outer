@@ -1,8 +1,13 @@
+import { NewsletterStyle } from './style'
 const Newsletter = () => {
   return (
-    <>
-      <h3>Recebe nossa newsletter</h3>
-    </>
+    <NewsletterStyle>
+      <form>
+        <label htmlFor='emailNews'>Recebe nossa newsletter</label>
+        <input id='emailNews' type='email'></input>
+        <button>inscreva-se</button>
+      </form>
+    </NewsletterStyle>
   )
 }
 

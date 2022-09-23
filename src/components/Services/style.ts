@@ -7,6 +7,8 @@ export const ServicesStyle = styled.section`
   padding: 5rem;
   gap: 7rem;
 
+  overflow: hidden;
+
   .IMGonscreenLeft,
   .TXTonscreenLeft,
   .IMGonscreenRight,
@@ -103,10 +105,7 @@ export const ServicesStyle = styled.section`
   }
 
   .privacy {
-    h2 {
-      padding-top: 4rem;
-    }
-    padding-top: 5rem;
+    padding: 5rem 0;
     color: ${({ theme }) => theme.colors.secundary100};
     .buttons {
       .btnPrimary,
