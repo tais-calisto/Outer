@@ -52,5 +52,15 @@ export const FormStyle = styled.section`
       background: linear-gradient(96.82deg, #a4b6dd 0%, #e3e3e3 97.58%);
       padding: 1rem 2rem;
     }
+    .backBtn {
+      background: transparent;
+      padding: 1rem;
+      color: ${({ theme }) => theme.colors.secundary100};
+      border: 4px solid ${({ theme }) => theme.colors.secundary100};
+    }
+    div {
+      display: flex;
+      justify-content: space-around;
+    }
   }
 `

@@ -44,7 +44,17 @@ const Form = () => {
         <form>
           <label htmlFor='message'>Mensagem</label>
           <textarea id='message' rows={8} />
-          <button>Enviar</button>
+          <div>
+            <button
+              className='backBtn'
+              onClick={() => {
+                setNext(false)
+              }}
+            >
+              Voltar
+            </button>
+            <button>Enviar</button>
+          </div>
         </form>
       ) : (
         <form>

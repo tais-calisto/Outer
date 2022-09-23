@@ -19,13 +19,13 @@ export const ServicesStyle = styled.section`
 
   .IMGoffscreenLeft,
   .TXToffscreenRight {
-    transform: translateX(-200px);
+    transform: translateX(-100px);
     opacity: 0;
   }
 
   .IMGoffscreenRight,
   .TXToffscreenLeft {
-    transform: translateX(200px);
+    transform: translateX(100px);
     opacity: 0;
   }
 
