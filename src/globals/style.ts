@@ -32,6 +32,11 @@ p, label{
     font-size:1.3rem;
 }
 
+.newsLabel{
+    font-family: 'Montserrat', serif;
+    
+}
+
 
 
 

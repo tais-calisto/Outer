@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 export const PartnersStyle = styled.section`
   padding: 5rem 0;
-  margin: 5rem 0;
-  background-color: ${({ theme }) => theme.colors.secundary300};
+  margin-top: 5rem;
+  background-color: ${({ theme }) => theme.colors.secundary100};
   h2 {
     text-align: center;
     color: ${({ theme }) => theme.colors.primary500};
