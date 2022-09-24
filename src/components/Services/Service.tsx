@@ -24,21 +24,20 @@ const Service = ({
 }: ServiceProps) => {
   const [onScreen, setOnScreen] = useState(false)
 
-  const handleScroll = () => {
-    if (window.scrollY > window.innerHeight * (order + 0)) {
-      setOnScreen(true)
-    } else {
-      setOnScreen(false)
-    }
-    if (window.scrollY > window.innerHeight * (order + 1.5)) {
-      setOnScreen(false)
-    }
-  }
-
   useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > window.innerHeight * (order + 0)) {
+        setOnScreen(true)
+      } else {
+        setOnScreen(false)
+      }
+      if (window.scrollY > window.innerHeight * (order + 1.5)) {
+        setOnScreen(false)
+      }
+    }
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+  }, [order])
 
   if (imageRight) {
     return (
@@ -59,6 +58,7 @@ const Service = ({
         </section>
         <img
           src={image}
+          alt=''
           className={
             onScreen
               ? `IMGonscreenRight ${name}`
@@ -72,6 +72,7 @@ const Service = ({
       <ServicesStyle>
         <img
           src={image}
+          alt=''
           className={
             onScreen
               ? `IMGonscreenLeft ${name}`

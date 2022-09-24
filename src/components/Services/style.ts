@@ -179,6 +179,7 @@ export const ServicesStyle = styled.section`
       }
     }
   }
+
   @media screen and (max-width: 968px) {
     padding-top: 20rem;
     gap: 2rem;
