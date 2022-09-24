@@ -77,4 +77,35 @@ export const NavStyle = styled.header`
       margin: 2rem;
     }
   }
+
+  @media screen and (max-width: 968px) {
+    .links,
+    .contact {
+      display: none;
+    }
+    img {
+      width: 45%;
+    }
+    .menu {
+      display: block;
+      background: transparent;
+      color: ${({ theme }) => theme.colors.primary500};
+    }
+    .itens {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 1rem;
+    .menuMobile {
+      display: block;
+      text-align: center;
+      grid-column: 1 / 3;
+      line-height: 2rem;
+      height: 100vh;
+    }
+    .contactMobile {
+      margin: 2rem;
+    }
+  }
 `

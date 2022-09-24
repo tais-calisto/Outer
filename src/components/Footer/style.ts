@@ -72,7 +72,7 @@ export const FooterStyle = styled.footer`
     }
   }
 
-  @media screen and (max-width: 568px) {
+  @media screen and (max-width: 718px) {
     .contact {
       padding: 2rem 1rem;
       gap: 1rem;

@@ -56,7 +56,7 @@ export const ServicesStyle = styled.section`
   }
 
   .backup {
-    padding-top: 5rem;
+    padding-top: 8rem;
     color: ${({ theme }) => theme.colors.secundary100};
     .buttons {
       .btnPrimary,
@@ -164,13 +164,6 @@ export const ServicesStyle = styled.section`
     .server,
     .more,
     .privacy {
-      /* padding-top: 0; */
-    }
-
-    .backup,
-    .server,
-    .more,
-    .privacy {
       display: flex;
       flex-direction: column;
       p {
@@ -184,6 +177,13 @@ export const ServicesStyle = styled.section`
         align-items: flex-end;
         gap: 1rem;
       }
+    }
+  }
+  @media screen and (max-width: 968px) {
+    padding-top: 20rem;
+    gap: 2rem;
+    img {
+      width: 40vw;
     }
   }
 `
