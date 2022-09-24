@@ -79,6 +79,10 @@ body{
 
 
 @media screen and (max-width: 568px){
+    *{
+        margin:0;
+        padding:0
+    }
     h1{
     font-size: 2rem;
 }

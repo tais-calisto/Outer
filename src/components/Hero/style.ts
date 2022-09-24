@@ -41,5 +41,8 @@ export const HeroStyle = styled.main`
       width: 50%;
       right: 0;
     }
+    p {
+      width: 50%;
+    }
   }
 `

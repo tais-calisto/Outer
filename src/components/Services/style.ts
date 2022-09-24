@@ -127,6 +127,17 @@ export const ServicesStyle = styled.section`
   }
 
   @media screen and (max-width: 568px) {
+    .IMGonscreenLeft,
+    .TXTonscreenLeft,
+    .IMGonscreenRight,
+    .TXTonscreenRight,
+    .IMGoffscreenLeft,
+    .TXToffscreenRight,
+    .IMGoffscreenRight,
+    .TXToffscreenLeft {
+      transform: translateX(0);
+      opacity: 1;
+    }
     flex-direction: row;
     padding-top: 24rem;
     padding-left: 1rem;
@@ -166,6 +177,7 @@ export const ServicesStyle = styled.section`
     .privacy {
       display: flex;
       flex-direction: column;
+      margin: 0;
       p {
         width: 45%;
         align-self: flex-end;
