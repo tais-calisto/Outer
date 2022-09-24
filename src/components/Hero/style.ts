@@ -22,4 +22,21 @@ export const HeroStyle = styled.main`
       padding: 1rem 2rem;
     }
   }
+
+  @media screen and (max-width: 568px) {
+    flex-direction: column;
+    padding-top: 1rem;
+    text-align: left;
+    section {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    img {
+      position: absolute;
+      z-index: -100;
+      top: 30vh;
+      width: 50%;
+      right: 0;
+    }
+  }
 `

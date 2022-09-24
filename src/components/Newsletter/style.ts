@@ -24,4 +24,16 @@ export const NewsletterStyle = styled.section`
     background: linear-gradient(96.82deg, #31365c 0%, #30344f 99.12%);
     padding: 0.5rem 1rem;
   }
+
+  @media screen and (max-width: 568px) {
+    padding: 1.5rem;
+    form {
+      flex-direction: column;
+      gap: 1rem;
+      text-align: center;
+      input {
+        width: 90%;
+      }
+    }
+  }
 `

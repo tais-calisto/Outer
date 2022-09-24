@@ -25,12 +25,12 @@ const Service = ({
   const [onScreen, setOnScreen] = useState(false)
 
   const handleScroll = () => {
-    if (window.scrollY > window.innerHeight * order) {
+    if (window.scrollY > window.innerHeight * (order + 0)) {
       setOnScreen(true)
     } else {
       setOnScreen(false)
     }
-    if (window.scrollY > window.innerHeight * (order + 1)) {
+    if (window.scrollY > window.innerHeight * (order + 1.5)) {
       setOnScreen(false)
     }
   }

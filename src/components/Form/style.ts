@@ -29,6 +29,7 @@ export const FormStyle = styled.section`
       }
     }
   }
+
   form {
     display: flex;
     flex-direction: column;
@@ -61,6 +62,16 @@ export const FormStyle = styled.section`
     div {
       display: flex;
       justify-content: space-around;
+    }
+
+    @media screen and (max-width: 568px) {
+      width: 95%;
+      button {
+        padding: 0.8rem;
+      }
+      .backBtn {
+        padding: 0.5rem;
+      }
     }
   }
 `

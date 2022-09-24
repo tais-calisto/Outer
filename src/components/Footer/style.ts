@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import theme from '../../globals/theme'
 
 export const FooterStyle = styled.footer`
   .contact {
@@ -70,6 +69,62 @@ export const FooterStyle = styled.footer`
     align-items: center;
     p {
       font-size: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 568px) {
+    .contact {
+      padding: 2rem 1rem;
+      gap: 1rem;
+      .phones {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+      }
+    }
+
+    .informations {
+      p {
+        font-size: 0.8rem;
+      }
+      padding: 2rem 1rem;
+
+      display: flex;
+      flex-direction: column;
+      row-gap: 2rem;
+      text-align: center;
+
+      .navegation {
+        ul {
+          padding-top: 2rem;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+
+          column-gap: 1rem;
+
+          li {
+            a {
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+      .service {
+        text-align: center;
+        .socialMedia ul {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          gap: 1rem;
+          padding-bottom: 1rem;
+        }
+      }
+    }
+    .copy {
+      padding: 1rem;
+
+      p {
+        font-size: 0.8rem;
+      }
     }
   }
 `

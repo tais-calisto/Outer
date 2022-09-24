@@ -41,4 +41,19 @@ export const PartnersStyle = styled.section`
       transform: translateX(calc(-20vw * 4));
     }
   }
+
+  @media screen and (max-width: 568px) {
+    padding-bottom: 2rem;
+    .slide-track {
+      width: calc(20vw * 16);
+    }
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(calc(-20vw * 8));
+      }
+    }
+  }
 `

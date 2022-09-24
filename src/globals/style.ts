@@ -6,8 +6,7 @@ const globalStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    transition: 1s all ease-in-out;
-
+    transition: 0.2s all linear;
 }
 
 
@@ -36,8 +35,6 @@ p, label{
     font-family: 'Montserrat', serif;
     
 }
-
-
 
 
 li,a{
@@ -80,6 +77,21 @@ body{
     background-color: #1C203E;
 }
 
+
+@media screen and (max-width: 568px){
+    h1{
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 1.8rem;
+}
+
+p, label, input, textarea{
+    font-size: 1rem;
+}
+
+}
 
 `
 

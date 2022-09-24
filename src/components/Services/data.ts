@@ -35,7 +35,7 @@ export const services = [
     name: 'more',
   },
   {
-    order: 5,
+    order: 4,
     title: 'Privadidade | LGPD',
     text: 'Entenda como a Altatech trabalha em conformidade com a Lei Geral de Proteção de Dados.',
     btn01: 'Solicite um orçamento',

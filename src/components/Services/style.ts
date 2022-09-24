@@ -6,7 +6,6 @@ export const ServicesStyle = styled.section`
   justify-content: space-between;
   padding: 5rem;
   gap: 7rem;
-
   overflow: hidden;
 
   .IMGonscreenLeft,
@@ -28,7 +27,6 @@ export const ServicesStyle = styled.section`
     transform: translateX(100px);
     opacity: 0;
   }
-
   h2 {
     padding-top: 2rem;
   }
@@ -40,10 +38,21 @@ export const ServicesStyle = styled.section`
   .buttons {
     display: flex;
     justify-content: space-between;
+    .btnPrimary,
+    .btnSecundary {
+      padding: 1rem 2rem;
+    }
   }
 
   button {
     box-shadow: ${({ theme }) => theme.shadow};
+  }
+
+  .backup,
+  .server,
+  .more,
+  .privacy {
+    transition: 1s all ease-in-out;
   }
 
   .backup {
@@ -53,7 +62,6 @@ export const ServicesStyle = styled.section`
       .btnPrimary,
       .btnSecundary {
         color: ${({ theme }) => theme.colors.secundary100};
-        padding: 1rem 2rem;
       }
       .btnPrimary {
         background: linear-gradient(96.82deg, #36c09f 0%, #0b8967 55.24%);
@@ -69,10 +77,6 @@ export const ServicesStyle = styled.section`
     padding-top: 5rem;
     color: ${({ theme }) => theme.colors.black};
     .buttons {
-      .btnPrimary,
-      .btnSecundary {
-        padding: 1rem 2rem;
-      }
       .btnPrimary {
         background: linear-gradient(96.82deg, #252b4a 0%, #455074 99.12%);
         color: ${({ theme }) => theme.colors.secundary100};
@@ -91,7 +95,6 @@ export const ServicesStyle = styled.section`
     .buttons {
       .btnPrimary,
       .btnSecundary {
-        padding: 1rem 2rem;
         color: ${({ theme }) => theme.colors.primary500};
       }
       .btnPrimary {
@@ -110,7 +113,6 @@ export const ServicesStyle = styled.section`
     .buttons {
       .btnPrimary,
       .btnSecundary {
-        padding: 1rem 2rem;
       }
       .btnPrimary {
         background: linear-gradient(96.82deg, #a4b6dd 0%, #b9c2d0 99.12%);
@@ -120,6 +122,67 @@ export const ServicesStyle = styled.section`
         color: ${({ theme }) => theme.colors.secundary100};
         background: transparent;
         border: 4px solid ${({ theme }) => theme.colors.secundary100};
+      }
+    }
+  }
+
+  @media screen and (max-width: 568px) {
+    flex-direction: row;
+    padding-top: 24rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    gap: 0;
+    position: relative;
+
+    img {
+      top: 31rem;
+      width: 50vw;
+      position: absolute;
+    }
+    h2 {
+      text-align: center;
+      padding-bottom: 5vh;
+    }
+    p {
+      text-align: right;
+    }
+
+    .buttons {
+      width: 90%;
+      margin: auto;
+      align-items: center;
+      justify-content: space-around;
+      .btnPrimary {
+        padding: 0.8rem;
+      }
+      .btnSecundary {
+        padding: 0.5rem;
+      }
+    }
+
+    .backup,
+    .server,
+    .more,
+    .privacy {
+      /* padding-top: 0; */
+    }
+
+    .backup,
+    .server,
+    .more,
+    .privacy {
+      display: flex;
+      flex-direction: column;
+      p {
+        width: 45%;
+        align-self: flex-end;
+        padding-bottom: 1rem;
+        padding-right: 1.5rem;
+      }
+      .buttons {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 1rem;
       }
     }
   }

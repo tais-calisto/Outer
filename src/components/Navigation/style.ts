@@ -50,7 +50,7 @@ export const NavStyle = styled.header`
     display: none;
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 568px) {
     .links,
     .contact {
       display: none;
