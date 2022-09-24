@@ -127,7 +127,7 @@ export const ServicesStyle = styled.section`
   }
 
   @media screen and (max-width: 568px) {
-    .IMGonscreenLeft,
+    /* .IMGonscreenLeft,
     .TXTonscreenLeft,
     .IMGonscreenRight,
     .TXTonscreenRight,
@@ -137,7 +137,24 @@ export const ServicesStyle = styled.section`
     .TXToffscreenLeft {
       transform: translateX(0);
       opacity: 1;
+    } */
+
+    .IMGonscreenLeft,
+    .TXTonscreenLeft,
+    .IMGonscreenRight,
+    .TXTonscreenRight {
+      transform: translateX(0px);
+      opacity: 1;
     }
+
+    .IMGoffscreenLeft,
+    .TXToffscreenRight,
+    .IMGoffscreenRight,
+    .TXToffscreenLeft {
+      transform: translateX(0px);
+      opacity: 0;
+    }
+
     flex-direction: row;
     padding-top: 24rem;
     padding-left: 1rem;
