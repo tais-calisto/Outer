@@ -20,6 +20,9 @@ export const HeroStyle = styled.main`
       color: ${({ theme }) => theme.colors.secundary100};
       box-shadow: ${({ theme }) => theme.shadow};
       padding: 1rem 2rem;
+      &:hover {
+        background-color: ${({ theme }) => theme.colors.primary500};
+      }
     }
   }
 
