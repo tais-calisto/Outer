@@ -1,4 +1,4 @@
-# Rect Blog
+# RELEITURA - HOME PAGE
 
 ## Descrição do projeto
 
