@@ -21,7 +21,7 @@ export const HeroStyle = styled.main`
       box-shadow: ${({ theme }) => theme.shadow};
       padding: 1rem 2rem;
       &:hover {
-        background-color: ${({ theme }) => theme.colors.primary500};
+        transform: scale(1.1);
       }
     }
   }

@@ -72,6 +72,12 @@ body{
     background-color: #1C203E;
 }
 
+button{
+    &:hover {
+        transform: scale(1.05);
+      }
+}
+
 @media screen and (max-width: 568px){
 h1{
     font-size: 2rem;

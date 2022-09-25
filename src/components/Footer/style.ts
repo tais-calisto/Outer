@@ -47,6 +47,9 @@ export const FooterStyle = styled.footer`
           a {
             color: ${({ theme }) => theme.colors.primary500};
           }
+          &:hover {
+            transform: scale(1.05);
+          }
         }
       }
     }
@@ -57,6 +60,11 @@ export const FooterStyle = styled.footer`
         flex-direction: row;
         justify-content: end;
         gap: 1rem;
+        li {
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
       }
     }
   }

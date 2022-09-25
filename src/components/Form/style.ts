@@ -51,11 +51,11 @@ export const FormStyle = styled.section`
       align-self: center;
       margin-top: 1rem;
       background: linear-gradient(96.82deg, #a4b6dd 0%, #e3e3e3 97.58%);
-      padding: 1rem 2rem;
+      padding: 0.7rem 1.5rem;
     }
     .backBtn {
       background: transparent;
-      padding: 1rem;
+      padding: 0.4rem 1rem;
       color: ${({ theme }) => theme.colors.secundary100};
       border: 4px solid ${({ theme }) => theme.colors.secundary100};
     }

@@ -87,9 +87,9 @@ export const ServicesStyle = styled.section`
         color: ${({ theme }) => theme.colors.secundary100};
       }
       .btnSecundary {
-        color: ${({ theme }) => theme.colors.black};
+        color: ${({ theme }) => theme.colors.primary500};
         background: transparent;
-        border: 4px solid ${({ theme }) => theme.colors.secundary100};
+        border: 4px solid ${({ theme }) => theme.colors.primary500};
       }
     }
   }
@@ -107,7 +107,7 @@ export const ServicesStyle = styled.section`
       }
       .btnSecundary {
         background: transparent;
-        border: 4px solid ${({ theme }) => theme.colors.secundary100};
+        border: 4px solid ${({ theme }) => theme.colors.primary500};
       }
     }
   }

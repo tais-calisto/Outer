@@ -19,6 +19,12 @@ export const NavStyle = styled.header`
     gap: 1rem;
   }
 
+  .links li {
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
   ul,
   .icons {
     display: grid;
