@@ -46,4 +46,14 @@ export const HeroStyle = styled.main`
       width: 50%;
     }
   }
+
+  @media screen and (min-width: 1668px) {
+    gap: 9rem;
+    section {
+      padding-top: 20rem;
+    }
+    img {
+      width: 40vw;
+    }
+  }
 `

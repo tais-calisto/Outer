@@ -247,4 +247,20 @@ export const ServicesStyle = styled.section`
       }
     }
   }
+
+  @media screen and (min-width: 1668px) {
+    padding-top: 5rem;
+    img {
+      width: 50vw;
+    }
+    .server,
+    .privacy,
+    .backup,
+    .more {
+      padding-top: 5rem;
+      h2 {
+        padding-top: 9rem;
+      }
+    }
+  }
 `

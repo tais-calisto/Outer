@@ -136,4 +136,15 @@ export const FooterStyle = styled.footer`
       }
     }
   }
+
+  @media screen and (min-width: 1668px) {
+    .contact {
+      gap: 5rem;
+      .phones {
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 5rem;
+        row-gap: 2rem;
+      }
+    }
+  }
 `
