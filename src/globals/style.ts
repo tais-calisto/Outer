@@ -9,7 +9,6 @@ const globalStyle = createGlobalStyle`
     transition: 0.2s all linear;
 }
 
-
 p,li,a,button,input, label{
     font-family: 'Hind', sans-serif;
 }
@@ -33,9 +32,7 @@ p, label{
 
 .newsLabel{
     font-family: 'Montserrat', serif;
-    
 }
-
 
 li,a{
     list-style: none;
@@ -55,12 +52,10 @@ input, textarea{
 border-radius: 10px;
 padding: 0.5rem;
 font-size: 1.1rem;
-
 };
 
 body{
     transition: 0.5s ease-in-out;
-
     background-color: #EBF1F1;
 }
 
@@ -77,13 +72,8 @@ body{
     background-color: #1C203E;
 }
 
-
 @media screen and (max-width: 568px){
-    *{
-        margin:0;
-        padding:0
-    }
-    h1{
+h1{
     font-size: 2rem;
 }
 
@@ -94,9 +84,10 @@ h2{
 p, label, input, textarea{
     font-size: 1rem;
 }
-
+.first, .second, .third, .fourth{
+    background-color: #EBF1F1;
 }
-
+}
 `
 
 export default globalStyle

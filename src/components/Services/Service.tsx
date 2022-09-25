@@ -42,57 +42,61 @@ const Service = ({
   if (imageRight) {
     return (
       <ServicesStyle>
-        <section
-          className={
-            onScreen
-              ? `TXTonscreenRight ${name}`
-              : `TXToffscreenRight backup ${name}`
-          }
-        >
-          <h2>{title}</h2>
-          <p>{text}</p>
-          <div className='buttons'>
-            <button className='btnPrimary'>{btn01}</button>
-            <button className='btnSecundary'>{btn02}</button>
-          </div>
-        </section>
-        <img
-          src={image}
-          alt=''
-          className={
-            onScreen
-              ? `IMGonscreenRight ${name}`
-              : `IMGoffscreenRight backup ${name}`
-          }
-        ></img>
+        <div className={`BG${name}`}>
+          <section
+            className={
+              onScreen
+                ? `TXTonscreenRight ${name}`
+                : `TXToffscreenRight backup ${name}`
+            }
+          >
+            <h2>{title}</h2>
+            <p>{text}</p>
+            <div className='buttons'>
+              <button className='btnPrimary'>{btn01}</button>
+              <button className='btnSecundary'>{btn02}</button>
+            </div>
+          </section>
+          <img
+            src={image}
+            alt=''
+            className={
+              onScreen
+                ? `IMGonscreenRight ${name}`
+                : `IMGoffscreenRight backup ${name}`
+            }
+          ></img>
+        </div>
       </ServicesStyle>
     )
   } else {
     return (
       <ServicesStyle>
-        <img
-          src={image}
-          alt=''
-          className={
-            onScreen
-              ? `IMGonscreenLeft ${name}`
-              : `IMGoffscreenLeft backup ${name}`
-          }
-        ></img>
-        <section
-          className={
-            onScreen
-              ? `TXTonscreenLeft ${name}`
-              : `TXToffscreenLeft backup ${name}`
-          }
-        >
-          <h2>{title}</h2>
-          <p>{text}</p>
-          <div className='buttons'>
-            <button className='btnPrimary'>{btn01}</button>
-            <button className='btnSecundary'>{btn02}</button>
-          </div>
-        </section>
+        <div className={`BG${name}`}>
+          <img
+            src={image}
+            alt=''
+            className={
+              onScreen
+                ? `IMGonscreenLeft ${name}`
+                : `IMGoffscreenLeft backup ${name}`
+            }
+          ></img>
+          <section
+            className={
+              onScreen
+                ? `TXTonscreenLeft ${name}`
+                : `TXToffscreenLeft backup ${name}`
+            }
+          >
+            <h2>{title}</h2>
+            <p>{text}</p>
+            <div className='buttons'>
+              <button className='btnPrimary'>{btn01}</button>
+              <button className='btnSecundary'>{btn02}</button>
+            </div>
+          </section>
+        </div>
       </ServicesStyle>
     )
   }

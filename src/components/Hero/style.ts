@@ -29,6 +29,7 @@ export const HeroStyle = styled.main`
   @media screen and (max-width: 568px) {
     flex-direction: column;
     padding-top: 1rem;
+    padding-bottom: 5rem;
     text-align: left;
     section {
       padding-left: 1rem;

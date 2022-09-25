@@ -1,12 +1,17 @@
 import styled from 'styled-components'
 
 export const ServicesStyle = styled.section`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 5rem;
-  gap: 7rem;
-  overflow: hidden;
+  .BGbackup,
+  .BGserver,
+  .BGmore,
+  .BGprivacy {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5rem;
+    gap: 7rem;
+    overflow: hidden;
+  }
 
   .IMGonscreenLeft,
   .TXTonscreenLeft,
@@ -127,7 +132,7 @@ export const ServicesStyle = styled.section`
   }
 
   @media screen and (max-width: 568px) {
-    /* .IMGonscreenLeft,
+    .IMGonscreenLeft,
     .TXTonscreenLeft,
     .IMGonscreenRight,
     .TXTonscreenRight,
@@ -137,33 +142,38 @@ export const ServicesStyle = styled.section`
     .TXToffscreenLeft {
       transform: translateX(0);
       opacity: 1;
-    } */
-
-    .IMGonscreenLeft,
-    .TXTonscreenLeft,
-    .IMGonscreenRight,
-    .TXTonscreenRight {
-      transform: translateX(0px);
-      opacity: 1;
-    }
-
-    .IMGoffscreenLeft,
-    .TXToffscreenRight,
-    .IMGoffscreenRight,
-    .TXToffscreenLeft {
-      transform: translateX(0px);
-      opacity: 0;
     }
 
     flex-direction: row;
-    padding-top: 24rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+
+    padding-left: 0;
+    padding-right: 0;
     gap: 0;
     position: relative;
 
+    .BGbackup,
+    .BGserver,
+    .BGmore,
+    .BGprivacy {
+      padding-top: 0;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    .BGbackup {
+      background-color: ${({ theme }) => theme.colors.primary500};
+    }
+    .BGserver {
+      background-color: ${({ theme }) => theme.colors.accent100};
+    }
+    .BGmore {
+      background-color: ${({ theme }) => theme.colors.primary100};
+    }
+    .BGprivacy {
+      background-color: ${({ theme }) => theme.colors.primary500};
+    }
+
     img {
-      top: 31rem;
+      top: 10rem;
       width: 50vw;
       position: absolute;
     }
@@ -194,7 +204,7 @@ export const ServicesStyle = styled.section`
     .privacy {
       display: flex;
       flex-direction: column;
-      margin: 0;
+      padding-top: 1rem;
       p {
         width: 45%;
         align-self: flex-end;
@@ -210,10 +220,26 @@ export const ServicesStyle = styled.section`
   }
 
   @media screen and (max-width: 968px) {
-    padding-top: 20rem;
     gap: 2rem;
     img {
       width: 40vw;
+    }
+
+    .server,
+    .privacy {
+      .buttons {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+    }
+    .backup,
+    .more {
+      .buttons {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 1rem;
+      }
     }
   }
 `

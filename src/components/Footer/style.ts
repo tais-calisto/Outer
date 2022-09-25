@@ -74,6 +74,7 @@ export const FooterStyle = styled.footer`
 
   @media screen and (max-width: 718px) {
     .contact {
+      background: ${({ theme }) => theme.colors.primary500};
       padding: 2rem 1rem;
       gap: 1rem;
       .phones {

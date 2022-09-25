@@ -66,6 +66,7 @@ export const FormStyle = styled.section`
 
     @media screen and (max-width: 568px) {
       width: 95%;
+      padding-bottom: 2rem;
       button {
         padding: 0.8rem;
       }
