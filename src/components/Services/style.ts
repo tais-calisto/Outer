@@ -220,7 +220,12 @@ export const ServicesStyle = styled.section`
   }
 
   @media screen and (max-width: 968px) {
-    gap: 2rem;
+    .BGbackup,
+    .BGserver,
+    .BGmore,
+    .BGprivacy {
+      gap: 2rem;
+    }
     img {
       width: 40vw;
     }
