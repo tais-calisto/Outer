@@ -1,46 +1,51 @@
-# Getting Started with Create React App
+# RELEITURA - HOME PAGE
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descrição do projeto
 
-## Available Scripts
+O projeto é um releitura da home page de um site já existente, foi desenvolvido como parte de um processo seletivo. 
 
-In the project directory, you can run:
+## Status
 
-### `npm start`
+Em andamento
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Tabela de Conteúdos
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- [Sobre](#sobre)
+- [Como executar o projeto](#-como-executar-o-projeto)
+  - [Pré-requisitos](#pré-requisitos)
+  - [Rodando a aplicação](#rodando-a-aplicação)
+- [Tecnologias](#tecnologias)
+- [Autora](#autora)
 
-### `npm test`
+## Sobre
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Projeto desenvolvido como etapa de participação em processo seletivo.
 
-### `npm run build`
+## Como executar o projeto
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Pré-requisitos
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/).
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Rodando a aplicação
 
-### `npm run eject`
+1. Clone este repositório
+2. Acesse a pasta do projeto no terminal
+3. Instale as dependências com `npm install`
+4. Execute a aplicação com `npm start`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Tecnologias
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+As seguintes ferramentas foram usadas na construção do projeto:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- [React](https://pt-br.reactjs.org/)
+- [Tabler Icons](https://tabler-icons.io/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Styled Components](https://styled-components.com/)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Autora
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Feito com ❤️ por Taís Calisto 👋🏽 Entre em contato!
+[Linkedin](https://www.linkedin.com/in/ta%C3%ADs-calisto-43725a134/)
