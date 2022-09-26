@@ -9,6 +9,7 @@ import {
   IconX,
 } from '@tabler/icons'
 import NavItens from './navItens'
+import { Link } from 'react-scroll'
 
 const Navigation = () => {
   const [showMenu, setShowMenu] = useState(false)
@@ -30,7 +31,15 @@ const Navigation = () => {
           <NavItens />
         </ul>
 
-        <button className='contact'>Entre em contato</button>
+        <Link
+          className='contact'
+          to='budget'
+          smooth={true}
+          offset={-100}
+          duration={500}
+        >
+          <button>Entre em contato</button>
+        </Link>
 
         <ul className='icons'>
           <li>
@@ -56,7 +65,11 @@ const Navigation = () => {
       </div>
       {showMenu && (
         <ul className='menuMobile'>
-          <button className='contactMobile'>Entre em contato</button>
+          <Link to='budget' smooth={true} offset={-100} duration={500}>
+            <button className='contactMobile' onClick={handleMenu}>
+              Entre em contato
+            </button>
+          </Link>
           <NavItens />
         </ul>
       )}

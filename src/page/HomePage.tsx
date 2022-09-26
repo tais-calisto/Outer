@@ -43,7 +43,6 @@ const HomePage = () => {
       <Navigation />
       <Hero />
       <Services />
-
       <Form />
       <Partners />
       <Newsletter />

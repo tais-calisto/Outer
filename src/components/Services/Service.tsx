@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Link } from 'react-scroll'
 import { ServicesStyle } from './style'
 
 type ServiceProps = {
@@ -53,7 +54,10 @@ const Service = ({
             <h2>{title}</h2>
             <p>{text}</p>
             <div className='buttons'>
-              <button className='btnPrimary'>{btn01}</button>
+              <Link to='budget' smooth={true} offset={-100} duration={500}>
+                <button className='btnPrimary'>{btn01}</button>
+              </Link>
+
               <button className='btnSecundary'>{btn02}</button>
             </div>
           </section>
@@ -92,7 +96,10 @@ const Service = ({
             <h2>{title}</h2>
             <p>{text}</p>
             <div className='buttons'>
-              <button className='btnPrimary'>{btn01}</button>
+              <Link to='budget' smooth={true} offset={-100} duration={500}>
+                <button className='btnPrimary'>{btn01}</button>
+              </Link>
+
               <button className='btnSecundary'>{btn02}</button>
             </div>
           </section>

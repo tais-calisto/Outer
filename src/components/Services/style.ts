@@ -43,9 +43,12 @@ export const ServicesStyle = styled.section`
   .buttons {
     display: flex;
     justify-content: space-between;
-    .btnPrimary,
-    .btnSecundary {
+
+    .btnPrimary {
       padding: 1rem 2rem;
+    }
+    .btnSecundary {
+      padding: 0.5rem 2rem;
     }
   }
 

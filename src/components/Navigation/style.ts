@@ -34,13 +34,17 @@ export const NavStyle = styled.header`
       color: ${({ theme }) => theme.colors.primary500};
     }
   }
-  button {
-    background: linear-gradient(
-      120deg,
-      ${({ theme }) => theme.colors.primary500},
-      ${({ theme }) => theme.colors.primary300}
-    );
-    color: ${({ theme }) => theme.colors.secundary100};
+
+  .contact {
+    button {
+      padding: 0.5rem 1rem;
+      background: linear-gradient(
+        120deg,
+        ${({ theme }) => theme.colors.primary500},
+        ${({ theme }) => theme.colors.primary300}
+      );
+      color: ${({ theme }) => theme.colors.secundary100};
+    }
   }
 
   .icons {
@@ -79,9 +83,6 @@ export const NavStyle = styled.header`
       line-height: 2rem;
       height: 100vh;
     }
-    .contactMobile {
-      margin: 2rem;
-    }
   }
 
   @media screen and (max-width: 968px) {
@@ -111,6 +112,14 @@ export const NavStyle = styled.header`
       height: 100vh;
     }
     .contactMobile {
+      padding: 0.5rem 1rem;
+      background: linear-gradient(
+        120deg,
+        ${({ theme }) => theme.colors.primary500},
+        ${({ theme }) => theme.colors.primary300}
+      );
+      color: ${({ theme }) => theme.colors.secundary100};
+
       margin: 2rem;
     }
   }

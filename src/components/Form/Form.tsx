@@ -5,7 +5,7 @@ const Form = () => {
   const [next, setNext] = useState(false)
 
   return (
-    <FormStyle>
+    <FormStyle id='budget'>
       <h2>Solicite um orçamento</h2>
       <div className='phases'>
         <div className='phase'>
