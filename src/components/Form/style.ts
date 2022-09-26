@@ -52,7 +52,7 @@ export const FormStyle = styled.section`
 
     input,
     textarea {
-      border: 4px solid ${({ theme }) => theme.colors.primary100};
+      border: 2px solid ${({ theme }) => theme.colors.primary100};
       background-color: transparent;
       color: ${({ theme }) => theme.colors.secundary100};
     }
