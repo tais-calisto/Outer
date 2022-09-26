@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <FooterStyle>
       <section className='contact'>
-        <img src={phone} alt=''></img>
+        <img src={phone} alt='Ícone de telefone'></img>
         <div className='phones'>
           {phones.map((phone) => {
             return (
@@ -23,7 +23,7 @@ const Footer = () => {
       </section>
       <section className='informations'>
         <div className='about'>
-          <img src={icon} alt=''></img>
+          <img src={icon} alt='Ícone da Altatech'></img>
           <h4>Altatech</h4>
           <p>
             Uma empresa referência em soluções tecnológicas, a Altatech nasceu
@@ -50,7 +50,7 @@ const Footer = () => {
                 return (
                   <li>
                     <a href={sm.link}>
-                      <img src={sm.icon} alt='' />
+                      <img src={sm.icon} alt={sm.alt} />
                     </a>
                   </li>
                 )
@@ -66,7 +66,7 @@ const Footer = () => {
       </section>
       <section className='copy'>
         <div>
-          <p>Copyright 2022</p>
+          <p>Copyright &#169; 2022</p>
           <p>Todos os direitos reservados</p>
         </div>
         <div>

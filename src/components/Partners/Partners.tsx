@@ -10,14 +10,14 @@ const Partners = () => {
           {logos.map((logo) => {
             return (
               <div className='slide'>
-                <img src={logo} alt='' />
+                <img src={logo.logo} alt={logo.alt} />
               </div>
             )
           })}
           {logos.map((logo) => {
             return (
               <div className='slide'>
-                <img src={logo} alt='' />
+                <img src={logo.logo} alt={logo.alt} />
               </div>
             )
           })}

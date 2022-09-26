@@ -4,8 +4,8 @@ import linkedin from '../../assets/logos/social-media/brand-linkedin.svg'
 import youtube from '../../assets/logos/social-media/brand-youtube.svg'
 
 export const socialMedia = [
-  { icon: mail, link: 'gmail.com' },
-  { icon: facebook, link: 'facebook.com' },
-  { icon: youtube, link: 'youtube.com' },
-  { icon: linkedin, link: 'linkedin.com' },
+  { icon: mail, link: 'gmail.com', alt: 'Link para o nosso e-mail' },
+  { icon: facebook, link: 'facebook.com', alt: 'Link para o nosso facebook' },
+  { icon: youtube, link: 'youtube.com', alt: 'Link para o nosso youtube' },
+  { icon: linkedin, link: 'linkedin.com', alt: 'Link para o nosso instagram' },
 ]

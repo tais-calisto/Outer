@@ -58,7 +58,7 @@ const Form = () => {
         </form>
       ) : (
         <form>
-          <label htmlFor='name'>Name</label>
+          <label htmlFor='name'>Nome</label>
           <input type='text' id='name' />
           <label htmlFor='phone'>Telefone</label>
           <input type='tel' id='phone' />

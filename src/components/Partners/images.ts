@@ -8,12 +8,12 @@ import lenovo from '../../assets/logos/partners/lenovo.png'
 import microsoft from '../../assets/logos/partners/microsoft.png'
 
 export const logos = [
-  apc,
-  bematech,
-  bitdefender,
-  cisco,
-  dell,
-  hp,
-  lenovo,
-  microsoft,
+  { logo: apc, alt: 'APC' },
+  { logo: bematech, alt: 'Bematech' },
+  { logo: bitdefender, alt: 'Bitdefender' },
+  { logo: cisco, alt: 'Cisco' },
+  { logo: dell, alt: 'Dell' },
+  { logo: hp, alt: 'HP' },
+  { logo: lenovo, alt: 'Lenovo' },
+  { logo: microsoft, alt: 'Microsoft' },
 ]

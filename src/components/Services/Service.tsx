@@ -27,7 +27,7 @@ const Service = ({
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > window.innerHeight * (order + 0)) {
+      if (window.scrollY > window.innerHeight * order) {
         setOnScreen(true)
       } else {
         setOnScreen(false)
@@ -57,13 +57,12 @@ const Service = ({
               <Link to='budget' smooth={true} offset={-100} duration={500}>
                 <button className='btnPrimary'>{btn01}</button>
               </Link>
-
               <button className='btnSecundary'>{btn02}</button>
             </div>
           </section>
           <img
             src={image}
-            alt=''
+            alt='Imagem ilustrativa'
             className={
               onScreen
                 ? `IMGonscreenRight ${name}`
@@ -79,7 +78,7 @@ const Service = ({
         <div className={`BG${name}`}>
           <img
             src={image}
-            alt=''
+            alt='Imagem ilustrativa'
             className={
               onScreen
                 ? `IMGonscreenLeft ${name}`
@@ -99,7 +98,6 @@ const Service = ({
               <Link to='budget' smooth={true} offset={-100} duration={500}>
                 <button className='btnPrimary'>{btn01}</button>
               </Link>
-
               <button className='btnSecundary'>{btn02}</button>
             </div>
           </section>

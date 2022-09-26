@@ -14,7 +14,7 @@ const Hero = () => {
         <button>Saiba mais</button>
       </section>
 
-      <img src={poligon} alt='Altatech Icon' />
+      <img src={poligon} alt='Logo Altatech' />
     </HeroStyle>
   )
 }
