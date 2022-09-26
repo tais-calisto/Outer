@@ -1,8 +1,22 @@
 import { useState } from 'react'
 import { FormStyle } from './style'
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 const Form = () => {
   const [next, setNext] = useState(false)
+
+  const notify = () => {
+    toast.success('Obrigado! Em breve entraremos em contato.', {
+      position: 'bottom-right',
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    })
+  }
 
   return (
     <FormStyle id='budget'>
@@ -41,7 +55,12 @@ const Form = () => {
       </div>
 
       {next ? (
-        <form>
+        <form
+          onSubmit={(event) => {
+            event.preventDefault()
+            notify()
+          }}
+        >
           <label htmlFor='message'>Mensagem</label>
           <textarea id='message' rows={8} />
           <div>
@@ -53,7 +72,7 @@ const Form = () => {
             >
               Voltar
             </button>
-            <button>Enviar</button>
+            <button type='submit'>Enviar</button>
           </div>
         </form>
       ) : (
@@ -70,12 +89,14 @@ const Form = () => {
             onClick={(event) => {
               event.preventDefault()
               setNext(true)
+              notify()
             }}
           >
             continuar
           </button>
         </form>
       )}
+      <ToastContainer />
     </FormStyle>
   )
 }

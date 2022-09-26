@@ -7,16 +7,16 @@ const Partners = () => {
       <h2>Parceiros</h2>
       <div className='slider'>
         <div className='slide-track'>
-          {logos.map((logo) => {
+          {logos.map((logo, index) => {
             return (
-              <div className='slide'>
+              <div key={index} className='slide'>
                 <img src={logo.logo} alt={logo.alt} />
               </div>
             )
           })}
-          {logos.map((logo) => {
+          {logos.map((logo, index) => {
             return (
-              <div className='slide'>
+              <div key={index} className='slide'>
                 <img src={logo.logo} alt={logo.alt} />
               </div>
             )

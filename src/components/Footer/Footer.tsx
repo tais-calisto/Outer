@@ -11,9 +11,9 @@ const Footer = () => {
       <section className='contact'>
         <img src={phone} alt='Ícone de telefone'></img>
         <div className='phones'>
-          {phones.map((phone) => {
+          {phones.map((phone, index) => {
             return (
-              <p>
+              <p key={index}>
                 <strong>{phone.city}: </strong>
                 {phone.phone}
               </p>
@@ -34,9 +34,9 @@ const Footer = () => {
         <div className='navegation'>
           <h4>Navegação</h4>
           <ul>
-            {siteMap.map((link) => {
+            {siteMap.map((link, index) => {
               return (
-                <li>
+                <li key={index}>
                   <a href='/'>{link}</a>
                 </li>
               )
@@ -46,9 +46,9 @@ const Footer = () => {
         <div className='service'>
           <div className='socialMedia'>
             <ul>
-              {socialMedia.map((sm) => {
+              {socialMedia.map((sm, index) => {
                 return (
-                  <li>
+                  <li key={index}>
                     <a href={sm.link}>
                       <img src={sm.icon} alt={sm.alt} />
                     </a>
