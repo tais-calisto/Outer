@@ -6,6 +6,16 @@ export const FormStyle = styled.section`
   padding: 0 5rem;
   text-align: center;
 
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type='number'] {
+    -moz-appearance: textfield;
+  }
+
   h2 {
     padding: 1rem 0;
   }
