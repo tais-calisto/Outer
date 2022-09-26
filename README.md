@@ -2,7 +2,7 @@
 
 ## Descrição do projeto
 
-O projeto é um releitura da home page de um site já existente, foi desenvolvido como parte de um processo seletivo. 
+O projeto é um releitura da home page de um site já existente, foi desenvolvido como parte de um processo seletivo.
 
 ## Status
 
@@ -44,6 +44,8 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Tabler Icons](https://tabler-icons.io/)
 - [Typescript](https://www.typescriptlang.org/)
 - [Styled Components](https://styled-components.com/)
+- [React Scroll](https://github.com/fisshy/react-scroll)
+- [React Toastify](https://fkhadra.github.io/react-toastify/)
 
 ## Autora
 
