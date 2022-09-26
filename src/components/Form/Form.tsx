@@ -89,7 +89,6 @@ const Form = () => {
             onClick={(event) => {
               event.preventDefault()
               setNext(true)
-              notify()
             }}
           >
             continuar
