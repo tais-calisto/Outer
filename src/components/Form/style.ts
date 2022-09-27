@@ -84,5 +84,9 @@ export const FormStyle = styled.section`
         padding: 0.5rem;
       }
     }
+    @media screen and (max-width: 968px) {
+      width: 90%;
+      padding-bottom: 2rem;
+    }
   }
 `

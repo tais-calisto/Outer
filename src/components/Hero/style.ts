@@ -29,7 +29,6 @@ export const HeroStyle = styled.main`
   @media screen and (max-width: 568px) {
     flex-direction: column;
     padding-top: 1rem;
-    padding-bottom: 5rem;
     text-align: left;
     section {
       padding-left: 1rem;
@@ -45,6 +44,10 @@ export const HeroStyle = styled.main`
     p {
       width: 50%;
     }
+  }
+
+  @media screen and (max-width: 968px) {
+    padding-bottom: 5rem;
   }
 
   @media screen and (min-width: 1668px) {

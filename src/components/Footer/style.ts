@@ -80,13 +80,14 @@ export const FooterStyle = styled.footer`
     }
   }
 
-  @media screen and (max-width: 718px) {
+  @media screen and (max-width: 968px) {
     .contact {
       background: ${({ theme }) => theme.colors.primary500};
       padding: 2rem 1rem;
       gap: 1rem;
       .phones {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
         gap: 1rem;
       }
     }
@@ -144,6 +145,14 @@ export const FooterStyle = styled.footer`
         grid-template-columns: repeat(4, 1fr);
         column-gap: 5rem;
         row-gap: 2rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 568px) {
+    .contact {
+      .phones {
+        grid-template-columns: repeat(2, 1fr);
       }
     }
   }

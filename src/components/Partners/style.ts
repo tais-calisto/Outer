@@ -43,7 +43,11 @@ export const PartnersStyle = styled.section`
   }
 
   @media screen and (max-width: 568px) {
-    padding-top: 0;
+    padding-top: 5rem;
+  }
+
+  @media screen and (max-width: 968px) {
+    margin-top: 0;
     .slider {
       height: 10vh;
     }

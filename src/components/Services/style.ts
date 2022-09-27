@@ -135,45 +135,12 @@ export const ServicesStyle = styled.section`
   }
 
   @media screen and (max-width: 568px) {
-    .IMGonscreenLeft,
-    .TXTonscreenLeft,
-    .IMGonscreenRight,
-    .TXTonscreenRight,
-    .IMGoffscreenLeft,
-    .TXToffscreenRight,
-    .IMGoffscreenRight,
-    .TXToffscreenLeft {
-      transform: translateX(0);
-      opacity: 1;
-    }
-
     flex-direction: row;
 
     padding-left: 0;
     padding-right: 0;
     gap: 0;
     position: relative;
-
-    .BGbackup,
-    .BGserver,
-    .BGmore,
-    .BGprivacy {
-      padding-top: 0;
-      padding-left: 1rem;
-      padding-right: 1rem;
-    }
-    .BGbackup {
-      background-color: ${({ theme }) => theme.colors.primary500};
-    }
-    .BGserver {
-      background-color: ${({ theme }) => theme.colors.accent100};
-    }
-    .BGmore {
-      background-color: ${({ theme }) => theme.colors.primary100};
-    }
-    .BGprivacy {
-      background-color: ${({ theme }) => theme.colors.primary500};
-    }
 
     img {
       top: 10rem;
@@ -223,12 +190,40 @@ export const ServicesStyle = styled.section`
   }
 
   @media screen and (max-width: 968px) {
+    .IMGonscreenLeft,
+    .TXTonscreenLeft,
+    .IMGonscreenRight,
+    .TXTonscreenRight,
+    .IMGoffscreenLeft,
+    .TXToffscreenRight,
+    .IMGoffscreenRight,
+    .TXToffscreenLeft {
+      transform: translateX(0);
+      opacity: 1;
+    }
+
     .BGbackup,
     .BGserver,
     .BGmore,
     .BGprivacy {
+      padding-top: 0;
+      padding-left: 1rem;
+      padding-right: 1rem;
       gap: 2rem;
     }
+    .BGbackup {
+      background-color: ${({ theme }) => theme.colors.primary500};
+    }
+    .BGserver {
+      background-color: ${({ theme }) => theme.colors.accent100};
+    }
+    .BGmore {
+      background-color: ${({ theme }) => theme.colors.primary100};
+    }
+    .BGprivacy {
+      background-color: ${({ theme }) => theme.colors.primary500};
+    }
+
     img {
       width: 40vw;
     }
