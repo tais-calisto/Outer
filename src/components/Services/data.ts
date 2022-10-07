@@ -7,7 +7,7 @@ export const services = [
   {
     order: 1,
     title: 'Backup em nuvem: Segurança avançada para seus dados',
-    text: 'Com a Criptografia de ponta a ponta os dados de sua empresa estarão sempre em segurança.',
+    text: 'Jelly sweet roll jelly beans biscuit pie macaroon chocolate donut. Carrot cake caramels pie sweet apple pie tiramisu carrot cake',
     btn01: 'Solicite um orçamento',
     btn02: 'Saiba mais',
     image: backupIMG,
@@ -17,7 +17,7 @@ export const services = [
   {
     order: 2,
     title: 'Server VPS: Tenha o seu servidor virtual',
-    text: 'Nosso Server Cloud dispõe de escalabilidade, segurança para a sua aplicação e performance.',
+    text: 'Jelly bear claw gummi bears lollipop cotton candy gummi bears chocolate bar cake cookie. ',
     btn01: 'Solicite um orçamento',
     btn02: 'Saiba mais',
     image: serverIMG,
@@ -27,7 +27,7 @@ export const services = [
   {
     order: 3,
     title: 'Estamos sempre criando mais',
-    text: 'Contamos com 3 mil equipamentos espalhados pelo Brasil e mais de 200 contratos ativos apenas na região de Londrina.',
+    text: 'Next level tbh everyday carry, blog copper mug forage kitsch roof party pickled hammock kale chips tofu. ',
     btn01: 'Solicite um orçamento',
     btn02: 'Saiba mais',
     image: moreIMG,
@@ -37,7 +37,7 @@ export const services = [
   {
     order: 4,
     title: 'Privadidade | LGPD',
-    text: 'Entenda como a Altatech trabalha em conformidade com a Lei Geral de Proteção de Dados.',
+    text: 'Oat cake halvah sweet roll cotton candy croissant lollipop. ',
     btn01: 'Solicite um orçamento',
     btn02: 'Saiba mais',
     image: privacyIMG,

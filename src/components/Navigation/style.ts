@@ -18,7 +18,9 @@ export const NavStyle = styled.header`
     align-items: center;
     gap: 1rem;
   }
-
+  img {
+    width: 100%;
+  }
   .links li {
     &:hover {
       transform: scale(1.05);

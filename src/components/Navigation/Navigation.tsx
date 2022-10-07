@@ -22,7 +22,7 @@ const Navigation = () => {
     <NavStyle>
       <div>
         <a href='/'>
-          <img src={logo} alt='Altatech' />
+          <img src={logo} alt='Outer' />
         </a>
       </div>
 

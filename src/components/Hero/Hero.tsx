@@ -8,8 +8,8 @@ const Hero = () => {
       <section>
         <h1>A tecnologia que te leva mais longe</h1>
         <p>
-          Nascemos para entregar inteligência, inovação e confiança nos recursos
-          tecnológicos existentes no mercado corporativo.
+          Macaroon tiramisu chocolate bar candy candy carrot cake jelly sweet.
+          Gummies croissant macaroon dessert. Chocolate cake dragée pie.
         </p>
         <button>Saiba mais</button>
       </section>

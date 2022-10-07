@@ -23,12 +23,13 @@ const Footer = () => {
       </section>
       <section className='informations'>
         <div className='about'>
-          <img src={icon} alt='Ícone da Altatech'></img>
-          <h4>Altatech</h4>
+          <img src={icon} alt='Ícone da Outer'></img>
+          <h4>Outer</h4>
           <p>
-            Uma empresa referência em soluções tecnológicas, a Altatech nasceu
-            para entregar inteligência, inovação e confiança nos recursos
-            tecnológicos existentes no mercado corporativo.
+            Cat gets stuck in tree firefighters try to get cat down firefighters
+            get stuck in tree cat eats firefighters' slippers kitty power ignore
+            the squirrels, you'll never catch them anyway for what a
+            cat-ass-trophy!
           </p>
         </div>
         <div className='navegation'>
@@ -59,8 +60,8 @@ const Footer = () => {
           </div>
           <h4>Atendimento</h4>
           <p>
-            Segunda a Sexta das 08:00 às 18:00 Av. Juscelino Kubitscheck, 1905 -
-            Centro CEP 86010-540 - Londrina - PR comercial@altatech.com.br
+            Segunda a Sexta das 08:00 às 18:00 Av. XXXXXX XXXXXXX, XXXX - Centro
+            - CEP XXXXX-XXX - Cidade - Estado
           </p>
         </div>
       </section>
@@ -70,7 +71,7 @@ const Footer = () => {
           <p>Todos os direitos reservados</p>
         </div>
         <div>
-          <p>CNPJ: 05.365.132/0001-30</p>
+          <p>CNPJ: XX.XXX.XXX/XXXX-XX</p>
         </div>
       </section>
     </FooterStyle>
