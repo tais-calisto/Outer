@@ -2,7 +2,7 @@
 
 ## Descrição do projeto
 
-O projeto é um releitura da home page de um site já existente, foi desenvolvido como parte de um processo seletivo.
+Trata-se de uma Home Page de site institucional.
 
 ## Status
 
