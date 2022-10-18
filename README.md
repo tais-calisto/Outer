@@ -6,7 +6,7 @@ Trata-se de uma Home Page de site institucional.
 
 ## Status
 
-Em andamento
+Em andamento, disponível para visualização em: <a href="https://outer.netlify.app" target="_blank"> Outer </a>
 
 ## Tabela de Conteúdos
 
